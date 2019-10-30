@@ -21,12 +21,12 @@ body{
 }
 
 .container{
-    width: 60vw;
+    width: 65vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 240, 240, 0.911);
+    background-color: hsla(0, 100%, 97%, 0.95);
     border-radius: 5px;
     box-shadow: 1rem 1rem 2rem rgba(65, 46, 44, 0.932), -1rem -1rem 2rem rgba(65, 46, 44, 0.932) ;
     
@@ -42,7 +42,7 @@ button{
     font-size: 1.3rem;
     font-family: 'Lato';
     font-weight: 400;
-    color: green;
+    color: rgb(180, 3, 3);
     transition: all .1s;
     cursor: pointer;
 }
@@ -71,9 +71,9 @@ img{
     border-radius: 15px;
 }
 
-.player-panel{
+.player-panel-0, .player-panel-1{
     width: 50%;
-    height: 60vh;
+    height: 100%;
     text-align: center;
     float: left;
 }
@@ -87,7 +87,7 @@ img{
 }
 
 .active .player-name{ font-weight: 400;}
-.active  {background-color: rgba(185, 105, 131, 0.527);}
+.active  {background-color: rgba(141, 141, 141, 0.527);}
 
 .player-name{
     text-transform: uppercase;
@@ -99,22 +99,30 @@ img{
 }
 .score-0, .score-1{
     color: rgb(0, 90, 41);
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 300;
     margin-bottom: 150px;
 }
 .current-box{
     width: 150px;
     height: 100px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px ;
     border-radius: 10px;
     background-color: rgba(206, 86, 126, 0.932);
 }
 
-.current-0, .current-1{
+.current-score{
     margin-top: 10px;
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(66, 15, 15);
+}
+
+.winner {
+    background-image: linear-gradient(to bottom right, rgba(155, 0, 155, 0.9), rgba(1, 34, 104, 0.9))
+}
+.winner .player-name{
+    font-weight: 400;
+    color: red;
 }
