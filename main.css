@@ -7,7 +7,7 @@
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background: url(./img/bg.jpg) center;
+    background: url(./img/bg1.jpg) center;
     background-size: cover;
     position: relative;
     color: #444;
@@ -18,6 +18,8 @@ body{
     content:'';
     display: table;
     clear:both; 
+    
+    
 }
 
 .container{
@@ -26,9 +28,9 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: hsla(0, 100%, 97%, 0.95);
+    background-color: rgba(255, 239, 239, 0.95);
     border-radius: 5px;
-    box-shadow: 1rem 1rem 2rem rgba(65, 46, 44, 0.932), -1rem -1rem 2rem rgba(65, 46, 44, 0.932) ;
+    box-shadow: 1rem 1rem 2rem rgba(66, 25, 13, 0.932), -1rem -1rem 2rem rgba(66, 25, 13, 0.932);
     
 }
 
@@ -104,25 +106,26 @@ img{
     margin-bottom: 150px;
 }
 .current-box{
+    text-transform: uppercase;
     width: 150px;
     height: 100px;
     margin: 10px auto;
     padding: 10px ;
     border-radius: 10px;
-    background-color: rgba(206, 86, 126, 0.932);
+    background-color: rgba(151, 88, 58, 0.932);
 }
 
 .current-score{
     margin-top: 10px;
     font-size: 1.8rem;
     font-weight: 600;
-    color: rgb(66, 15, 15);
+    color: rgb(192, 191, 191);
 }
 
 .winner {
-    background-image: linear-gradient(to bottom right, rgba(155, 0, 155, 0.9), rgba(1, 34, 104, 0.9))
+    background-image: linear-gradient(to bottom right, rgba(236, 114, 236, 0.9), rgba(63, 102, 185, 0.9))
 }
 .winner .player-name{
     font-weight: 400;
-    color: red;
+    color: rgb(141, 8, 8);
 }
