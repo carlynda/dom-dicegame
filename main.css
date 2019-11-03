@@ -62,8 +62,40 @@ button i{
 }
 
 .btn-new{ top: 30px; }
+.btn-submit{ top: 120px; left: 60%; }
 .btn-roll{top: 300px;}
 .btn-hold{top: 400px;}
+
+#winPoint_input{ 
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    line-height: 1.5rem;
+    width: 8rem; 
+    border-radius: 5px;
+    box-shadow: .5rem .5rem .5rem rgba(0,0,0, 0.3);
+    border: none;
+    background: rgba(230, 229, 228, 0.932);
+}
+
+.btn-submit:link, .btn-submit:visited{
+    color: rgb(180, 3, 3);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .4s;
+    
+}
+.btn-submit:hover{
+    font-weight: 600;
+    transform: translateY(-5px);
+
+}
+
 img{
     width: 8rem;
     position: absolute;
